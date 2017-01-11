@@ -1,0 +1,28 @@
+$blue : #8fe1d0;
+
+%icons { 		
+	position: absolute;
+	display: block;
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+%pseudo {
+	position: absolute;
+	display: block;
+	content: "";
+}
+
+%center {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+
+// @include get-sprite($header-spr, arrow);
+$header-spr : sprite-map('icons-header/*.png' , $spacing: 70px);
+$main-spr : sprite-map('icons-main/*.png' , $spacing: 70px);
