@@ -16,10 +16,11 @@
 
 @mixin font($font) {
 	@if $font == bold {
-		font-family: 'pt_sansbold';
+		font-family: "PTSansBold";
 	} @elseif $font == ital {
-		font-family: 'pt_sansitalic';
+		font-family: "PTSansItalic";
 	} @elseif $font == reg {
-		font-family: 'pt_sansregular';
+		font-family: "PTSansRegular";
+		font-weight: normal;
 	}
 }
