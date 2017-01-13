@@ -1,0 +1,58 @@
+.projects {
+	margin-bottom: 50px;
+}
+
+.projects-title {
+	font-size: 35px;
+	padding: 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.project-img-container {
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.projects-description {
+	padding: 13px 15px 10px 15px;
+	background: #f9f8f3;
+	color: black;
+}
+
+.projects-description-text {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.projects-description-price {
+	font-size: 20px;
+}
+
+.projects-img {
+	transition: all 0.3s ease;
+}
+
+.projects-link:hover {
+	.projects-img {
+		transform: scale(1.2);
+	}
+
+	.zoom {
+		opacity: 1;
+		left: 5px;
+		top: 5px;
+		bottom: 5px;
+		right: 5px;
+	}
+}
+
+.projects-item  {
+	margin-bottom: 30px;
+}
+
+.footer-nav .up {
+	right: 9%;
+}

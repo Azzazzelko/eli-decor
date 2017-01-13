@@ -36,6 +36,10 @@ body {
     text-align: center;
 }
 
+.img-responsive {
+    max-width: inherit;
+}
+
 .container_small {
     max-width: 1020px;
     display: block;
