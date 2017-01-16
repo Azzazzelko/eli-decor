@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="../css/slick-theme.css"/>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/main-media.css">
+	<link rel="stylesheet" href="../css/select2.min.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
 	<link rel="stylesheet" href="../css/designers.css">
 
 
@@ -30,6 +32,8 @@
     <script src="../js/jquery.popupoverlay.js"></script>
     <script src="../js/footermain.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/select2.full.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
 <body>
@@ -231,7 +235,7 @@
 									<div class="designers-img-container">
 										<img src="../images/olga.png" alt="img" class="designers-img img-responsive">
 									</div>
-									<a href="#" class="btn_pink">Консультация дизайнера</a>
+									<a href=".designer-pop-up" class="btn_pink designers-button" data-toggle="modal">Консультация дизайнера</a>
 								</div>
 								<div class="col-sm-8 designers-description-block">
 									<div class="designers-description-top">
@@ -325,7 +329,7 @@
 									<div class="designers-img-container">
 										<img src="../images/natli.png" alt="img" class="designers-img img-responsive">
 									</div>
-									<a href="#" class="btn_pink">Консультация дизайнера</a>
+									<a href=".designer-pop-up" class="btn_pink designers-button" data-toggle="modal">Консультация дизайнера</a>
 								</div>
 								<div class="col-sm-8 designers-description-block">
 									<div class="designers-description-top">
@@ -413,6 +417,69 @@
 				</li>
 			</ul>
 		</section>
+
+		<!-- Designer modal -->
+		<div class="modal fade designer-pop-up">
+			<div class="designer-pop-up__dialog">
+				<div class="designer-pop__container container">
+					<a href="#" data-dismiss="modal" class="designer-pop__btn-close"></a>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="designer-pop__img-container">
+								<img src="../images/olga.png" class="designer-pop__img img-responsive" alt="img">
+							</div>
+							<div class="designer-pop__designer-name">Ольга немцова</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="designer-pop__logo-container">
+								<img src="../images/logo.png" alt="img" class="designer-pop__logo-img img-responsive">
+							</div>
+							<form action="#" class="designer-pop__form">
+								<input type="text" class="designer-pop__input" placeholder="Введите имя">
+								<input type="text" name="phone" class="designer-pop__input designer-pop__input-phone" placeholder="+7 (___) ___-__-__">
+								<input type="email" name="email" placeholder="E-mail" class="designer-pop__input designer-pop__input-email">
+								<div class="designer-pop__input-block clearfix">
+									<div class="designer-pop__text pull-left">Выберите дату:</div>
+									<div class="designer-pop__input-date-container pull-right">
+										<a href="#" class="datepicker-prev"></a>
+										<input type="text" name="date" class="designer-pop__input-date" id="datepicker">
+										<a href="#" class="datepicker-next"></a>
+									</div>
+								</div>
+								<div class="designer-pop__input-block margin_bottom clearfix">
+									<div class="designer-pop__text pull-left">Выберите время:</div>
+									<select name="time" class="pull-right">
+										<option value="12">до 12 часов</option>
+										<option value="13">до 13 часов</option>
+										<option value="14">до 14 часов</option>
+										<option value="15">до 15 часов</option>
+										<option value="16">до 16 часов</option>
+									</select>
+								</div>
+								<button type="submit" class="btn_pink designer-pop__btn-submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Thanks modal -->
+		<div class="modal thanks-pop-up inner-modal" id="pass-res-pop-up">
+			<div class="thanks-pop-up__dialog">
+				<div class="thanks-pop-up__container">
+					<a href="#" class="thanks-pop-up__close-button" data-my-pop-close="true"></a>
+					<div class="thanks-pop-up__img-container">
+						<img src="../images/logo.png" alt="img" class="thanks-pop-up__img img-responsive">
+					</div>
+					<div class="thanks-pop-up__text">
+						<p>Спасибо!</p>
+						<p>Ваша заявка принята!</p>
+						<p>В ближайшее время дизайнер свяжеться с вами.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Zoom img modal -->
 		<div id="popup">

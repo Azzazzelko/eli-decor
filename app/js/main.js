@@ -124,6 +124,112 @@
         orientation: "horizontal",
         range: "min"
       });
-    }
+    };
+
+    /* datepicker */
+    if ($.datepicker) {
+      $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: '&#x3c;Пред',
+        nextText: 'След&#x3e;',
+        currentText: 'Сегодня',
+        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+        'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+        'Июл','Авг','Сен','Окт','Ноя','Дек'],
+        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false
+      };
+      $.datepicker.setDefaults($.datepicker.regional['ru']); //локализация
+
+      var dateNow = new Date();
+      $('#datepicker').datepicker();
+      $('#datepicker').datepicker('setDate', dateNow);
+
+      $('.datepicker-next').click(function () {   //кнопка след. день
+        var $picker = $("#datepicker");
+        var date = new Date($picker.datepicker('getDate'));
+        date.setDate(date.getDate()+1);
+        $picker.datepicker('setDate', date);
+        return false;
+      });
+
+      $('.datepicker-prev').click(function () {   //кнопка пред. день
+        var $picker = $("#datepicker");
+        var date = new Date($picker.datepicker('getDate'));
+        date.setDate(date.getDate()-1);
+        $picker.datepicker('setDate', date);
+        return false;
+      });
+    };
+
+    /* select */
+    if ($('select').length) {
+      $('select').select2();
+    };
+
+    /* Замена имени и картинки при клике на кнопку дизайнера */
+    var designersBtn = $(".designers-button");
+    var designersModal = $(".designer-pop-up");
+
+    designersBtn.on("click", function(e){
+      var $this = $(this);
+
+      var imgSrc = $(this).siblings('.designers-img-container').find("img").attr("src");
+      var name = $(this).parent().siblings('.designers-description-block').find(".designers-description-name").text();
+      
+      designersModal.find(".designer-pop__designer-name").text(name);
+      designersModal.find(".designer-pop__img").attr("src", imgSrc);
+    });
+
+    /* Для кастомных модалок, не бутовых */
+    var modals = (function(){
+
+      var innerModal = $(".inner-modal");           //Внутренние модалки
+      var openButtons = $("[data-my-pop='true']");  //Кнопки с дата атрибутом, открывающие внутренние модалки.
+
+      var init = function(){
+        setUpListeners();
+      };
+
+      var setUpListeners = function(){
+        innerModal.on("click", closePopup);
+        openButtons.on("click", thatWillBeOpen);
+      };
+
+      function thatWillBeOpen(e){   //открываем модалку по Хрефу.
+        e.preventDefault();
+
+        var $this = $(this);
+        var href = $this.attr("href");
+
+        openPopup(href);
+      };
+
+      function openPopup(target) { 
+        $(target).fadeIn(200);
+      };
+
+      function closePopup(e) {
+        var $target = $(e.target);
+
+        if ($target.hasClass('inner-modal') || $target.attr('data-my-pop-close')) {
+          innerModal.fadeOut(200);
+        }
+      };
+
+      return {
+        init:init
+      }
+    }());
+
+    $(document).ready(function(){
+      modals.init();
+    });
+
   })
 })();

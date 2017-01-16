@@ -58,29 +58,18 @@ $(document).ready(function(){
     };
     $('.owl-sewing-curtains').owlCarousel(standart);
     $('.owl-made-curtains').owlCarousel(standart);
-    /*
-    $('#showList').click(function(){
-        $('.listShow').slideDown( "slow", function() {
-            // Animation complete.
-        });
-    });*/
-
-    $('#showList').click(function(){
-        // $('ul.sub-menu').not($(this).children('ul')).slideUp();
-        // // $(this).find('ul.sub-menu').slideDown();
-
-        $('.listShow').toggle( "slow", function() {
-            // console.log('1');
-        });
-    });
 
     $('.about-video .wrapp-video .poster').click(function(){
         $('.about-video .wrapp-video .poster').css({'display':'none'});
     });
-    $('.footer-nav .up').click(function(){
+
+    /* scroll-top */
+    $('.footer-nav .up').click(function(){                      
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
-    $(".callback-area .form-block form .phone-input, #calculatePrice_popup #phone").mask("+7 (999) 999-99-99",{placeholder:"_"});
+
+    /* input mask */
+    $(".callback-area .form-block form .phone-input, #calculatePrice_popup #phone, .designer-pop__input-phone").mask("+7 (999) 999-99-99",{placeholder:"_"});
 
 
     $('#calculatePrice_popup').popup({
