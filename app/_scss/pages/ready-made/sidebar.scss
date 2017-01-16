@@ -160,11 +160,6 @@
 	padding-top: 20px;
 }
 
-.sidebar-slider_fix {
-	margin: 0 -15px;
-	padding: 0 15px;
-}
-
 .sidebar-slider {
 	height: 4px;
 	cursor: pointer;
@@ -191,4 +186,9 @@
 		border-radius: 5px;
 		position: absolute;
 	}
+}
+
+.sidebar-slider_fix {
+	margin: 0 -15px;
+	padding: 0 15px;
 }

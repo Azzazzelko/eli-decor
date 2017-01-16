@@ -2,9 +2,11 @@
 /* ===== instruments ====== */
 .sidebar-title:before, .sidebar-title.collapsed:after, .sidebar-blinds-text:before,
 .sidebar-room-text:before,
-.sidebar-style-text:before, .sidebar-blinds-checkbox:checked + .sidebar-blinds-text:after,
+.sidebar-style-text:before,
+.sidebar-default-text:before, .sidebar-blinds-checkbox:checked + .sidebar-blinds-text:after,
 .sidebar-room-checkbox:checked + .sidebar-room-text:after,
-.sidebar-style-checkbox:checked + .sidebar-style-text:after {
+.sidebar-style-checkbox:checked + .sidebar-style-text:after,
+.sidebar-default-checkbox:checked + .sidebar-default-text:after {
   position: absolute;
   display: block;
   content: "";
@@ -47,6 +49,13 @@
   border-bottom: 1px solid black;
 }
 
+.paggination-block {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
 .paggination-title {
   display: inline-block;
   font-size: 20px;
@@ -80,6 +89,12 @@
   margin-bottom: 50px;
 }
 
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .projects-title {
   font-size: 35px;
   padding: 50px 0;
@@ -103,6 +118,9 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .projects-description-price {
@@ -111,6 +129,10 @@
 
 .projects-img {
   transition: all 0.3s ease;
+}
+
+.projects-link {
+  display: block;
 }
 
 .projects-link:hover .projects-img {
@@ -132,13 +154,19 @@
   right: 9%;
 }
 
+.btn-all-items {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
 .sidebar {
   background: #f9f8f3;
   padding: 20px 20px 25px 20px;
   margin-bottom: 50px;
 }
 .sidebar .btn_pink {
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
 }
 
 .sidebar-list {
@@ -182,47 +210,54 @@
 .sidebar-blinds-list,
 .sidebar-room-list,
 .sidebar-style-list,
-.sidebar-colors-list {
+.sidebar-colors-list,
+.sidebar-default-list {
   padding: 20px 0 0 0;
 }
 
 .sidebar-blinds-item,
 .sidebar-room-item,
-.sidebar-style-item {
+.sidebar-style-item,
+.sidebar-default-item {
   display: block;
   margin-bottom: 15px;
 }
 .sidebar-blinds-item:last-child,
 .sidebar-room-item:last-child,
-.sidebar-style-item:last-child {
+.sidebar-style-item:last-child,
+.sidebar-default-item:last-child {
   margin-bottom: 0;
 }
 
 .sidebar-blinds-checkbox,
 .sidebar-room-checkbox,
 .sidebar-style-checkbox,
-.sidebar-colors-checkbox {
+.sidebar-colors-checkbox,
+.sidebar-default-checkbox {
   display: none;
 }
 
 .sidebar-blinds-label,
 .sidebar-room-label,
 .sidebar-style-label,
-.sidebar-colors-label {
+.sidebar-colors-label,
+.sidebar-default-label {
   cursor: pointer;
   font-weight: normal;
 }
 
 .sidebar-blinds-text,
 .sidebar-room-text,
-.sidebar-style-text {
+.sidebar-style-text,
+.sidebar-default-text {
   font-size: 18px;
   position: relative;
   padding-left: 25px;
 }
 .sidebar-blinds-text:before,
 .sidebar-room-text:before,
-.sidebar-style-text:before {
+.sidebar-style-text:before,
+.sidebar-default-text:before {
   width: 15px;
   height: 15px;
   background: #dfdfdf;
@@ -232,7 +267,8 @@
 
 .sidebar-blinds-checkbox:checked + .sidebar-blinds-text:after,
 .sidebar-room-checkbox:checked + .sidebar-room-text:after,
-.sidebar-style-checkbox:checked + .sidebar-style-text:after {
+.sidebar-style-checkbox:checked + .sidebar-style-text:after,
+.sidebar-default-checkbox:checked + .sidebar-default-text:after {
   width: 7px;
   height: 7px;
   background: #66b69f;
@@ -311,4 +347,4 @@
   position: absolute;
 }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=clothes.css.map */

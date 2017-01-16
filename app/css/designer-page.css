@@ -447,4 +447,56 @@ select {
   right: 8%;
 }
 
-/*# sourceMappingURL=designers.css.map */
+.designers-projects {
+  background: #f9f8f3;
+}
+
+.designers-projects__title {
+  font-size: 35px;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.designers-projects__list .info {
+  padding: 15px 20px 20px 20px;
+  background: #dfddd5;
+  color: black;
+}
+.designers-projects__list .info p.title {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.designers-projects__list .info p {
+  font-weight: bold;
+  text-align: left;
+}
+.designers-projects__list .img-container {
+  position: relative;
+  overflow: hidden;
+}
+.designers-projects__list .designers-projects__img {
+  width: 100%;
+}
+.designers-projects__list .designers-projects__link {
+  display: block;
+}
+.designers-projects__list .designers-projects__link:hover .hover_scale {
+  transform: scale(1.2);
+  position: initial;
+}
+.designers-projects__list .designers-projects__link:hover .zoom {
+  opacity: 1;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+
+.designers-projects__item {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=designer-page.css.map */

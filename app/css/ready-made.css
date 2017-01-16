@@ -103,10 +103,18 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 5px;
+  color: black;
 }
 
 .projects-description-price {
   font-size: 20px;
+  font-weight: bold;
+  color: black;
+  line-height: 30px;
+}
+
+.projects-description-btn {
+  padding: 7px 20px;
 }
 
 .projects-img {
@@ -280,11 +288,6 @@
   padding-top: 20px;
 }
 
-.sidebar-slider_fix {
-  margin: 0 -15px;
-  padding: 0 15px;
-}
-
 .sidebar-slider {
   height: 4px;
   cursor: pointer;
@@ -311,4 +314,9 @@
   position: absolute;
 }
 
-/*# sourceMappingURL=projects.css.map */
+.sidebar-slider_fix {
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=ready-made.css.map */

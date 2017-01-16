@@ -97,7 +97,7 @@
       }
     }, function () {
       $(this).next().removeClass('active');
-    });1
+    });
 
     $('.submenu-block').hover(function () {
       $(this).addClass('active');
@@ -120,11 +120,37 @@
 
     /* Slider */
     if ( $("#slider").length ){
+
+      var sliderMin = parseInt( $("#slider").attr("data-min") ), //значение дата-атрибута мин
+          sliderMax = parseInt( $("#slider").attr("data-max") ); //значение дата-атрибута макс
+
       $("#slider").slider({
-        orientation: "horizontal",
-        range: "min"
+        range: true,
+        min: sliderMin,                    // минимум слайдера
+        max: sliderMax,                    // максимум слайдера
+        values: [ sliderMin, sliderMax ],
+        slide: function( event, ui ) {
+          $("#slider-amount").text(ui.values[0] + " ₽ - " + ui.values[1]+" ₽");  //показываем изменение слайдера 
+        }
       });
+
+      $("#slider-amount").text(sliderMin + " ₽ - " + sliderMax+" ₽");   //изначальные значения с дата атрибутов
     };
+
+    /* filter-reset */
+    $('.sidebar-reset-filter').on("click", function(e){
+      e.preventDefault();
+      var $this = $(this);
+      var sliderMin = parseInt( $("#slider").attr("data-min") ),
+          sliderMax = parseInt( $("#slider").attr("data-max") );
+
+      $this.parent().find("input").removeAttr("checked");
+
+      $("#slider").slider({
+        values: [ sliderMin, sliderMax ]
+      });
+      $("#slider-amount").text(sliderMin + " ₽ - " + sliderMax+" ₽");
+    });
 
     /* datepicker */
     if ($.datepicker) {
