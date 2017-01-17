@@ -57,7 +57,6 @@
       fade: true,
       asNavFor: '.projectSlider'
     });
-
     $('.projectSlider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -91,6 +90,49 @@
       ]
     });
 
+    $('.big-curtains-slider__big_img').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.big-curtains-slider__projectSlider'
+    });
+    $('.big-curtains-slider__projectSlider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.big-curtains-slider__big_img',
+      focusOnSelect: true,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+      ]
+    });
+
+
+    /* header and footer */
     $('.navigation li').hover(function () {
       if($(this).next().hasClass('submenu-block')) {
         $(this).next().addClass('active');
@@ -124,8 +166,8 @@
       var sliderMin = parseInt( $("#slider").attr("data-min") ), //значение дата-атрибута мин
           sliderMax = parseInt( $("#slider").attr("data-max") ); //значение дата-атрибута макс
 
-      $("#slider").slider({
-        range: true,
+          $("#slider").slider({
+            range: true,
         min: sliderMin,                    // минимум слайдера
         max: sliderMax,                    // максимум слайдера
         values: [ sliderMin, sliderMax ],
@@ -142,7 +184,7 @@
       e.preventDefault();
       var $this = $(this);
       var sliderMin = parseInt( $("#slider").attr("data-min") ),
-          sliderMax = parseInt( $("#slider").attr("data-max") );
+      sliderMax = parseInt( $("#slider").attr("data-max") );
 
       $this.parent().find("input").removeAttr("checked");
 
@@ -206,8 +248,9 @@
       var $this = $(this);
 
       var imgSrc = $(this).siblings('.designers-img-container').find("img").attr("src");
-      var name = $(this).parent().siblings('.designers-description-block').find(".designers-description-name").text();
-      
+      // var name = $(this).parent().siblings('.designers-description-block').find(".designers-description-name").text();
+      var name = $(this).parent().parent().find(".designers-description-name").text();
+
       designersModal.find(".designer-pop__designer-name").text(name);
       designersModal.find(".designer-pop__img").attr("src", imgSrc);
     });

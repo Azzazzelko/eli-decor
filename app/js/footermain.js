@@ -39,7 +39,7 @@ $(document).ready(function(){
         }
     };
     $('.owl-aboutSalonSlider').owlCarousel(singleSlide);
-    var standart= {
+    var standart = {
         loop:true,
         margin:57,
         nav:true,
@@ -56,8 +56,28 @@ $(document).ready(function(){
             }
         }
     };
+
     $('.owl-sewing-curtains').owlCarousel(standart);
     $('.owl-made-curtains').owlCarousel(standart);
+
+    var settings = {
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
+        }
+    };
+    $('.owl-our-curt').owlCarousel(settings);
 
     $('.about-video .wrapp-video .poster').click(function(){
         $('.about-video .wrapp-video .poster').css({'display':'none'});
@@ -71,6 +91,10 @@ $(document).ready(function(){
     /* input mask */
     $(".callback-area .form-block form .phone-input, #calculatePrice_popup #phone, .designer-pop__input-phone").mask("+7 (999) 999-99-99",{placeholder:"_"});
 
+    /* price list */
+    $('#showList').click(function(){
+        $('.listShow').toggle("slow", function() {});
+    });
 
     $('#calculatePrice_popup').popup({
         transition: 'all .5s'

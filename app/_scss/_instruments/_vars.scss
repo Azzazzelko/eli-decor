@@ -23,6 +23,6 @@ $blue : #8fe1d0;
 	transform: translate(-50%,-50%); 
 }
 
-// @include get-sprite($header-spr, arrow);
+// @include get-sprite($contacts-spr, arrow);
 $designers-spr : sprite-map('icons-designers/*.png' , $spacing: 70px);
-
+$contacts-spr : sprite-map('icons-contacts/*.png' , $spacing: 70px);

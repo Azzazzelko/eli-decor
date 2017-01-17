@@ -1,0 +1,141 @@
+.selection-title {
+	font-size: 35px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.selection-description {
+	font-size: 20px;
+	margin-bottom: 50px;
+
+	p {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.selection-list {
+	margin-bottom: 10px;
+}
+
+.selection-item {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.selection-item__img-container {
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.selection-item__img {
+	width: 100%;
+	transition: all 0.35s;
+}
+
+.selection-item__img-description {
+	transition: all 0.35s;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	min-width: 85%;
+	padding: 15px 10px 15px 10px;
+	background: #ffffff;
+	opacity: 0.9;
+	text-align: center;
+}
+
+.img-description__title {
+	color: black;
+	text-transform: uppercase;
+	font-size: 27px;
+	margin-bottom: 10px;
+}
+
+.img-description__code {
+	color: black;
+	font-size: 20px;
+}
+
+.selection-item__img-container:hover {
+	.selection-item__img {
+		transform: scale(1.2);
+	}
+
+	.selection-item__img-description {
+		transform: translate(-50%, -50%) scale(1.05);
+	}
+}
+
+.projectP-title {
+	font-size: 35px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.projectP-list {
+	font-size: 0;
+	margin: 0 -15px 15px -15px;
+}
+
+.projectP-item {
+	margin-bottom: 30px;
+
+	&:nth-child(3n+1) {
+		width: 100%;
+		padding: 0 15px;
+		float: left;
+	}
+
+	&:nth-child(3n+2) {
+		width: 33.33333333%;
+		padding: 0 15px;
+		float: left;
+	}
+
+	&:nth-child(3n) {
+		width: 66.66666667%;
+		padding: 0 15px;
+		float: left;
+	}
+}
+
+.projectP-item__img-container {
+	max-width: 100%;
+}
+
+.projectP-item__img {
+	width: 100%;
+}
+
+.used {
+	background: #8fe1d0;
+	padding: 45px 0;
+}
+
+.used-top {
+	margin-bottom: 45px;
+}
+
+.used-title {
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.used-link {
+	padding: 7px 0;
+	display: block;
+	font-size: 20px;
+	text-decoration: underline;
+	color: black;
+	text-transform: uppercase;
+}
+
