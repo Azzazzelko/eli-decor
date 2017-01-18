@@ -423,6 +423,7 @@ select {
   text-align: left;
 }
 .madeCurtains .img-container {
+  overflow: hidden;
   position: relative;
 }
 .madeCurtains .item:hover .hover_scale {

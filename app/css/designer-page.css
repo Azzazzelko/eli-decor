@@ -459,19 +459,21 @@ select {
 }
 
 .designers-projects__list .info {
-  padding: 15px 20px 20px 20px;
+  padding: 15px 20px 15px 20px;
   background: #dfddd5;
   color: black;
-}
-.designers-projects__list .info p.title {
-  text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .designers-projects__list .info p {
   font-weight: bold;
   text-align: left;
+}
+.designers-projects__list .info p.title {
+  margin-bottom: 5px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
 }
 .designers-projects__list .img-container {
   position: relative;

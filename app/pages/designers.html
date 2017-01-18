@@ -7,7 +7,6 @@
 	<title>Дизайнеры</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/owl.carousel.css">
-	<link rel="stylesheet" href="../css/jquery.fancybox.css">
 	<link rel="stylesheet" href="../css/slick.css"/>
 	<link rel="stylesheet" href="../css/slick-theme.css"/>
 	<link rel="stylesheet" href="../css/style.css">
@@ -26,7 +25,6 @@
 
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.fancybox.pack.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery.maskedinput.min.js"></script>
     <script src="../js/jquery.popupoverlay.js"></script>
@@ -209,7 +207,7 @@
 	</header>
 
 	<main class="main">
-		<div class="layout"></div>
+		
 
 		<section class="breadcrumbs-block">
 			<div class="container_small padd-clear">
@@ -269,7 +267,7 @@
 						<div class="decor_container_big">
 							<div class="owl-carousel owl-made-curtains">
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-1.png" alt="img">
 											<div class="zoom"></div>
@@ -281,7 +279,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-2.png" alt="img">
 											<div class="zoom"></div>
@@ -293,7 +291,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-3.png" alt="img">
 											<div class="zoom"></div>
@@ -305,7 +303,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-1.png" alt="img">
 											<div class="zoom"></div>
@@ -363,7 +361,7 @@
 						<div class="decor_container_big">
 							<div class="owl-carousel owl-made-curtains">
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-1.png" alt="img">
 											<div class="zoom"></div>
@@ -375,7 +373,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-2.png" alt="img">
 											<div class="zoom"></div>
@@ -387,7 +385,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-3.png" alt="img">
 											<div class="zoom"></div>
@@ -399,7 +397,7 @@
 									</a>
 								</div>
 								<div class="item">
-									<a href="#popup" class="p-project">
+									<a href=".zoom-pop-up" data-my-pop='true'>
 										<div class="img-container">
 											<img class="hover_scale" src="../images/well-img-1.png" alt="img">
 											<div class="zoom"></div>
@@ -482,64 +480,68 @@
 		</div>
 
 		<!-- Zoom img modal -->
-		<div id="popup">
-			<div class="exit"></div>
-			<div class="big_img">
-				<div>
-					<img src="../images/made_curtains1.png" alt="">
-				</div>
-				<div>
-					<img src="../images/made_curtains2.png" alt="">
-				</div>
-				<div>
-					<img src="../images/made_curtains3.png" alt="">
-				</div>
-				<div>
-					<img src="../images/made_curtains1.png" alt="">
-				</div>
-				<div>
-					<img src="../images/made_curtains2.png" alt="">
-				</div>
-				<div>
-					<img src="../images/made_curtains3.png" alt="">
-				</div>
-			</div>
-			<div class="projectSlider">
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains1.png" alt="">
+		<div class="modal zoom-pop-up inner-modal">
+			<div class="zoom-pop-up__dialog">
+				<div class="zoom-pop-up__container">
+					<a href="#" class="thanks-pop-up__close-button" data-my-pop-close="true"></a>
+					<div class="big_img">
+						<div>
+							<img src="../images/made_curtains1.png" alt="img">
+						</div>
+						<div>
+							<img src="../images/made_curtains2.png" alt="img">
+						</div>
+						<div>
+							<img src="../images/made_curtains3.png" alt="img">
+						</div>
+						<div>
+							<img src="../images/made_curtains1.png" alt="img">
+						</div>
+						<div>
+							<img src="../images/made_curtains2.png" alt="img">
+						</div>
+						<div>
+							<img src="../images/made_curtains3.png" alt="img">
+						</div>
+					</div>
+					<div class="projectSlider">
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains1.png" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains2.png" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains3.png" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains1.png" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains2.png" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item project-gallery">
+								<img src="../images/made_curtains3.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="gallery-buttons">
+						<a href="#" class="btn_pink calculatePrice_popup_open">Консультация дизайнера</a>
+						<a href="#" class="btn_green">Подробнее о проекте</a>
 					</div>
 				</div>
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains2.png" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains3.png" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains1.png" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains2.png" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="item project-gallery">
-						<img src="../images/made_curtains3.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="gallery-buttons">
-				<a href="" class="btn_pink">Консультация дизайнера</a>
-				<a href="" class="btn_green">Подробнее о проекте</a>
-			</div>
+			</div>	
 		</div>
 
 		<!-- Feedback modal -->

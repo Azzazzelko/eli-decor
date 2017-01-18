@@ -168,12 +168,14 @@ h3{
 }
 .decor_container_big{
     max-width: 1431px;
+    padding: 0 15px;
     margin:0 auto;
     display: block;
     position: relative;
 }
 .decor_container_texttile{
     max-width: 1840px;
+    padding: 0 15px;
     margin:0 auto;
     display: block;
     position: relative;
@@ -826,8 +828,10 @@ footer .adress:before{
 }
 #calculatePrice_popup{
     background: white;
-    padding: 50px 30px;
+    padding: 30px 55px;
     position: relative;
+    width: 90%;
+    max-width: 415px; 
 }
 #calculatePrice_popup .exit{
     width: 27px;
@@ -843,7 +847,8 @@ footer .adress:before{
     margin: 0 auto;
 }
 #calculatePrice_popup img{
-    max-width: 200px;
+    max-width: 90%;
+    width: 200px;
     margin-bottom: 15px;
 }
 #calculatePrice_popup input{
@@ -1286,7 +1291,7 @@ nav.main-nav ul.navigation > li:hover {
 }
 
 .owl-our_projects {
-   margin-top: 35px;
+ margin-top: 35px;
 }
 
 .projects-area .owl-carousel .owl-controls .owl-dots {
@@ -1493,8 +1498,12 @@ nav.main-nav ul.navigation > li:hover {
 .callback-area .form-block form .btn_pink {
     display: inline-block;
     border: none;
-    padding: 14px 105px;
     cursor: pointer;
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
 }
 
 .projectSlider {
@@ -1588,6 +1597,7 @@ nav.main-nav ul.navigation > li:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 415px;
+    max-width: 90%;
     box-shadow: 0px 6px 18px 0px rgba(95, 81, 67, 0.72);
 }
 
@@ -1620,8 +1630,83 @@ nav.main-nav ul.navigation > li:hover {
 .thanks-pop-up__text {
     text-align: center;
     font-size: 24px;
+}
 
-    p {
-        line-height: 30px;
-    }
+.thanks-pop-up__text p {
+    line-height: 30px;
+}
+
+
+/* Zoom Modal */
+
+.zoom-pop-up.modal {
+    display: block;
+    visibility: hidden;
+}
+
+.zoom-pop-up .slick-next {
+    background: url(../images/next.png);
+    top: 50%;
+    transform: translateY(-50%) scale(0.9);
+    right: 10px;
+    width: 35px;
+    height: 60px;
+    opacity: 0.75;
+}
+
+.zoom-pop-up .slick-prev {
+    background: url(../images/prev.png);
+    top: 50%;
+    transform: translateY(-50%) scale(0.9);
+    left: 10px;
+    width: 35px;
+    height: 60px;
+    opacity: 0.75;
+}
+
+.zoom-pop-up .projectSlider .slick-current img {
+    border: 2px solid #95cdbe;
+}
+
+.zoom-pop-up .slick-prev:hover,
+.zoom-pop-up .slick-next:hover {
+    opacity: 1;
+}
+
+.zoom-pop-up .slick-next:before,
+.zoom-pop-up .slick-prev:before {
+    display: none;
+}
+
+.zoom-pop-up__dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    max-width: 90%;
+    box-shadow: 0px 6px 18px 0px rgba(95, 81, 67, 0.72);
+}
+
+.zoom-pop-up__container {
+    background: #fff;
+    padding: 30px; 
+}
+
+.zoom-pop-up__close-button {
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/popup_exit.png);
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+
+/* small feed Modal */
+
+#calculatePrice_popup .btn_pink {
+    padding: 0;
+    height: 53px;
+    line-height: 53px;
+    font-size: 20px;
 }

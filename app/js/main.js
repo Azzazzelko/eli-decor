@@ -2,25 +2,6 @@
 ;(function () {
   $(document).on('ready',function() {
 
-    $("a.p-project").click(function() {
-      $('.layout').fadeIn('fast');
-      $('.projectSlider').slick('slickNext');
-    });
-
-    $("a.p-project").fancybox({
-      maxWidth	: 800,
-      minHeight   : 250,
-      fitToView	: false,
-      autoDimensions: 	true,
-      autoResize: true,
-      closeClick	: false,
-      openEffect	: 'fade',
-      closeEffect	: 'fade',
-      beforeClose: function() {
-        $('.layout').fadeOut('fast');
-      }
-    });
-
     var projectsSlider = {
       loop:true,
       nav:true,
@@ -281,6 +262,7 @@
 
       function openPopup(target) { 
         $(target).fadeIn(200);
+        $(target).css("visibility", "visible");
       };
 
       function closePopup(e) {
