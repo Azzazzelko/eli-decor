@@ -83,4 +83,14 @@
   border-bottom: 1px solid black;
 }
 
+/* xs+sm+md */
+/* xs+sm */
+/* sm */
+@media screen and (max-width: 767px) {
+  .actions-descriptions {
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+
 /*# sourceMappingURL=actions.css.map */

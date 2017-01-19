@@ -96,6 +96,12 @@
   border-bottom: 1px solid black;
 }
 
+/* sm */
+@media screen and (max-width: 767px) {
+  .blog-img-container {
+    margin-bottom: 20px;
+  }
+}
 .paggination-title {
   display: inline-block;
   font-size: 20px;

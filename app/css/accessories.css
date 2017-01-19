@@ -49,6 +49,21 @@
   border-bottom: 1px solid black;
 }
 
+/* xs+sm+md */
+/* xs+sm */
+/* sm */
+@media screen and (max-width: 767px) {
+  .projects-item {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .paggination-block {
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
 .paggination-block {
   display: inline-block;
   margin-bottom: 50px;

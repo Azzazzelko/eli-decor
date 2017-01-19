@@ -34,6 +34,7 @@
 
 .cloth-detail__item {
 	margin-bottom: 5px;
+	display: flex;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -45,12 +46,14 @@
 	width: 190px;
 	margin-right: 25px;
 	font-size: 18px;
+	flex: 0 0 190px;
 }
 
 .cloth-detail__item-right {
 	display: inline-block;
 	@include font(bold);
 	font-size: 18px;
+	align-self: flex-end;
 }
 
 .cloth-detail__info-description {

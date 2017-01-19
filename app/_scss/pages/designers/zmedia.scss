@@ -1,0 +1,61 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.designer-pop-up__dialog {
+		max-width: 90%;
+	}
+
+	.designer-pop__container.container {
+		max-width: 100%;
+	}
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+
+}
+
+/* xs */
+@media screen and (max-width: 767px) {
+	.designers-img {
+		margin: 0 auto;
+	}	
+
+	.descriptions-item {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.info p {
+		font-size: 20px;
+	}
+
+	.designer-pop__img-container {
+		display: none;
+	}
+
+	.designer-pop__logo-container {
+		display: none;
+	}
+
+	.designer-pop__designer-name {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.designer-pop__input-date-container {
+		width: 100%;
+	}
+
+	.select2-container {
+		width: 100% !important;
+	}
+
+	.madeCurtains .btn_pink {
+		width: 100%;
+		font-size: 18px;
+	}
+}
+

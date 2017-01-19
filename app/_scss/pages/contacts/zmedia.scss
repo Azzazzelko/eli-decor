@@ -1,0 +1,36 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.adress-sect .adress-block-title {
+		font-size: 30px;
+	}
+
+	.adress-sect .adress-block__description {
+		font-size: 18px;
+	}
+
+	.adress-sect .adress-block__description p {
+		font-size: 18px;
+	}
+}
+
+/* xs */
+@media screen and (max-width: 767px) {
+	.adress-block:before {
+		display: none !important;
+	}
+
+	.adress-block {
+		padding: 0 !important;
+		text-align: center;
+	}
+
+	.adress-block_location {
+		margin-bottom: 25px;
+	}
+}
+

@@ -48,6 +48,7 @@
 
 .about_img-container {
   margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .about-description {
@@ -159,5 +160,19 @@
 .callback-area .form-block form {
   background: #dfddd5;
 }
+
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+  .owl-aboutSalonSlider .item .aboutSlideDescript {
+    text-align: left;
+  }
+}
+/* xs+sm */
+@media screen and (max-width: 991px) {
+  .owl-aboutSalonSlider .item .aboutSlideDescript {
+    text-align: left;
+  }
+}
+/* xs */
 
 /*# sourceMappingURL=about.css.map */

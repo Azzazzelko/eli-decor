@@ -347,4 +347,22 @@
   position: absolute;
 }
 
+/* xs+sm+md */
+/* xs+sm */
+/* sm */
+@media screen and (max-width: 767px) {
+  .projects-item {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paggination-block {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
 /*# sourceMappingURL=clothes.css.map */

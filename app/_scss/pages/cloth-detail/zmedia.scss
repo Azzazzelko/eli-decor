@@ -1,0 +1,95 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.cloth-detail__info-tel {
+		display: block;
+	}
+
+	.cloth-detail__price {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.cloth-detail__btn {
+		max-width: 240px;
+		line-height: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+
+	.used-title {
+		font-size: 30px;
+	}
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.cloth-detail__list {
+		padding: 20px;
+	}
+
+	.cloth-detail__item-left {
+		width: 50%;
+		flex: 0 0 50%;
+	}
+
+	.cloth-detail__info-description {
+		padding: 20px;
+	}
+
+	.cloth-detail__info-tel {
+		display: inline-block;
+	}
+
+	.cloth-detail__info-block {
+		margin-bottom: 25px;
+	}
+
+	.cloth-detail__price {
+		margin-bottom: 25px;
+	}
+
+	.used-title {
+		max-width: 75%;
+	}
+
+	.selection-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+	.cloth-detail__price {
+		display: block;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.cloth-detail__btn {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.used-title {
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.used-link {
+		text-align: center;
+		width: 100%;
+	}
+
+	.used-material__item {
+		margin-bottom: 20px;
+	}
+
+	.selection-item {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
