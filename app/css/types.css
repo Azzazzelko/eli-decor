@@ -89,4 +89,21 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .types-item__btn {
+    max-width: 100%;
+    margin: 0 auto 25px auto;
+  }
+
+  .types-item {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dad2d2;
+    padding-bottom: 20px;
+  }
+  .types-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
 /*# sourceMappingURL=types.css.map */

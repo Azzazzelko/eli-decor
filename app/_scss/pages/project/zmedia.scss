@@ -1,0 +1,91 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.used-title {
+		font-size: 30px;
+	}
+
+	.designer-pop-up__dialog {
+		max-width: 90%;
+	}
+
+	.designer-pop__container.container {
+		max-width: 100%;
+	}
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.used-title {
+		max-width: 75%;
+	}
+
+	.selection-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.designers-button {
+		line-height: 30px;
+	}
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+
+	.used-title {
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.used-link {
+		text-align: center;
+		width: 100%;
+	}
+
+	.used-material__item {
+		margin-bottom: 20px;
+	}
+
+	.selection-item {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.designers-button {
+		line-height: 48px;
+		margin-bottom: 25px;
+	}
+
+	.projectP-item {
+		width: 100% !important;
+	}
+
+	.designer-pop__img-container {
+		display: none;
+	}
+
+	.designer-pop__logo-container {
+		display: none;
+	}
+
+	.designer-pop__designer-name {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.designer-pop__input-date-container {
+		width: 100%;
+	}
+
+	.select2-container {
+		width: 100% !important;
+	}
+
+	.madeCurtains .btn_pink {
+		width: 100%;
+		font-size: 18px;
+	}
+}
+
