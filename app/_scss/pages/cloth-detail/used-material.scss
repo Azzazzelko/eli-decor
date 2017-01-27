@@ -1,43 +1,45 @@
-.used-material {
-	padding: 45px 0;
-}
+.page-cloth-detail {
+	.used-material {
+		padding: 45px 0;
+	}
 
-.used-material-item__img-container {
-	max-width: 100%;
-	overflow: hidden;
-}
+	.used-material-item__img-container {
+		max-width: 100%;
+		overflow: hidden;
+	}
 
-.used-material__img {
-	width: 100%;
-	transition: all 0.35s;
-}
+	.used-material__img {
+		width: 100%;
+		transition: all 0.35s;
+	}
 
-.used-material__link {
-	display: block;
+	.used-material__link {
+		display: block;
 
-	&:hover {
-		.used-material__img {
-			transform: scale(1.2);
+		&:hover {
+			.used-material__img {
+				transform: scale(1.2);
+			}
 		}
 	}
-}
 
-.used-material__description {
-	padding: 15px 20px;
-	background: #f9f8f3;
-}
+	.used-material__description {
+		padding: 15px 20px;
+		background: #f9f8f3;
+	}
 
-.used-material__description-title {
-	color: black;
-	font-size: 18px;
-	margin-bottom: 10px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
+	.used-material__description-title {
+		color: black;
+		font-size: 18px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 
-.used-material__description-price {
-	color: black;
-	font-size: 25px;
-	font-weight: bold;
+	.used-material__description-price {
+		color: black;
+		font-size: 25px;
+		font-weight: bold;
+	}
 }

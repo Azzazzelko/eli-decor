@@ -1,22 +1,28 @@
 /* xs+sm+md */
 @media screen and (max-width: 1199px) {
-	.owl-aboutSalonSlider .item .aboutSlideDescript {
-		text-align: left;
+	.page-about {
+		.owl-aboutSalonSlider .item .aboutSlideDescript {
+			text-align: left;
+		}
 	}
 }
 
 /* xs+sm */
 @media screen and (max-width: 991px) {
-	.owl-aboutSalonSlider .item .aboutSlideDescript {
-		text-align: left;
+	.page-about {
+		.owl-aboutSalonSlider .item .aboutSlideDescript {
+			text-align: left;
+		}
 	}
 }
 
 /* xs */
 @media screen and (max-width: 767px) {
-	.madeCurtains {
-		.owl-dots {
-			display: block !important;
+	.page-about {
+		.madeCurtains {
+			.owl-dots {
+				display: block !important;
+			}
 		}
 	}
 }

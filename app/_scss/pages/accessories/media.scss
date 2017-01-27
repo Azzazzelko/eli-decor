@@ -10,15 +10,17 @@
 
 /* sm */
 @media screen and (max-width: 767px) {
-	.projects-item {
-		text-align: center;
-		margin: 0 auto;
-	}
+	.page-accessories {
+		.projects-item {
+			text-align: center;
+			margin: 0 auto;
+		}
 
-	.paggination-block {
-		margin-bottom: 20px;
-		margin-right: 0;
-		margin-top: 20px;
-	}	
+		.paggination-block {
+			margin-bottom: 20px;
+			margin-right: 0;
+			margin-top: 20px;
+		}	
+	}
 }
 

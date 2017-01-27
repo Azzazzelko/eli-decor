@@ -1,31 +1,33 @@
-.paggination-title {
-	display: inline-block;
-	font-size: 20px;
-	margin-right: 10px;
-}
-
-.paggination-list {
-	font-size: 0;
-	display: inline-block;
-}
-
-.paggination-item {
-	display: inline-block;
-	margin-right: 10px;
-
-	&:last-child {
-		margin-right: 0;
+.page-reviews {
+	.paggination-title {
+		display: inline-block;
+		font-size: 20px;
+		margin-right: 10px;
 	}
-}
 
-.paggination-link {
-	font-size: 20px;
-	display: block;
-	color: black;
+	.paggination-list {
+		font-size: 0;
+		display: inline-block;
+	}
 
-	&.active, 
-	&:hover {
-		color: #66b7a1;
-		text-decoration: underline;
+	.paggination-item {
+		display: inline-block;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.paggination-link {
+		font-size: 20px;
+		display: block;
+		color: black;
+
+		&.active, 
+		&:hover {
+			color: #66b7a1;
+			text-decoration: underline;
+		}
 	}
 }

@@ -1,86 +1,88 @@
-.reviews {
-	margin-bottom: 50px;
-}
+.page-reviews {
+	.reviews {
+		margin-bottom: 50px;
+	}
 
-.reviews-title {
-	font-size: 35px;
-	padding: 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-}
+	.reviews-title {
+		font-size: 35px;
+		padding: 50px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
 
-.reviews-img-wrap {
-	position: relative;
-	padding-left: 0;
-	padding-right: 0;
-	height: 170px;
-}
+	.reviews-img-wrap {
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+		height: 170px;
+	}
 
-.reviews-img-container {
-	max-width: 100%;
-	position: relative;
-	border-radius: 50%;
-	overflow: hidden;
-	height: 170px;
-}
+	.reviews-img-container {
+		max-width: 100%;
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		height: 170px;
+	}
 
-.reviews-img {
-	position: absolute;
-}
+	.reviews-img {
+		position: absolute;
+	}
 
-.reviews-img-link {
-	background: image-url("vk.png") no-repeat;
-	font-size: 0;
-	width: 24px;
-	height: 24px;
-	display: none;
-	margin: 0 auto;
-	margin-top: 10px;
-}
+	.reviews-img-link {
+		background: image-url("vk.png") no-repeat;
+		font-size: 0;
+		width: 24px;
+		height: 24px;
+		display: none;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
 
-.reviews-date {
-	font-size: 17px;
-}
+	.reviews-date {
+		font-size: 17px;
+	}
 
-.reviews-name {
-	margin-right: 5px;
-	font-size: 20px;
-	@include font(bold);
-}
+	.reviews-name {
+		margin-right: 5px;
+		font-size: 20px;
+		@include font(bold);
+	}
 
-.reviews-description__top {
-	margin-bottom: 20px;
-}
+	.reviews-description__top {
+		margin-bottom: 20px;
+	}
 
-.reviews-description__text {
-	font-size: 18px;
-	line-height: 22px;
-
-	p {
+	.reviews-description__text {
+		font-size: 18px;
 		line-height: 22px;
-		margin-bottom: 25px;
 
-		&:last-child {
-			margin-bottom: 0;
+		p {
+			line-height: 22px;
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
-}
 
-.reviews-item  {
-	margin-bottom: 70px;
+	.reviews-item  {
+		margin-bottom: 70px;
 
-	&.vk {
-		.reviews-img-link {
-			display: block;
+		&.vk {
+			.reviews-img-link {
+				display: block;
+			}
 		}
 	}
-}
 
-.reviews-block {
-	padding-left: 50px;
-	padding-right: 0;
-}
+	.reviews-block {
+		padding-left: 50px;
+		padding-right: 0;
+	}
 
-.paggination-block {
-	margin-left: -15px;
+	.paggination-block {
+		margin-left: -15px;
+	}
 }

@@ -1,90 +1,92 @@
-.plan-container {
-	max-width: 920px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-.plan-title {
-	font-size: 35px;
-	padding: 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.plan-block {
-	margin-bottom: 30px;
-}
-
-.plan-block__title {
-	font-size: 20px;
-	@include font(bold);
-	text-transform: uppercase;
-	margin-bottom: 25px;
-	text-align: center;
-}
-
-.plan-block__img-container {
-	max-width: 100%;
-}
-
-.plan-block__img {
-	text-align: center;
-}
-
-.adress-sect {
-	background: #8fe1d0;
-	padding: 50px 0;
-
-	.adress-block {
-		position: relative;
-		padding: 0 0 0 95px;
-
-		&.adress-block_location:before {
-			@extend %pseudo;
-			@include get-sprite($contacts-spr, location);
-			left: 0;
-		}
-
-		&.adress-block_graf:before {
-			@extend %pseudo;
-			@include get-sprite($contacts-spr, graf);
-			left: 0;
-		}
+.page-contacts {
+	.plan-container {
+		max-width: 920px;
+		margin: 0 auto;
+		padding: 0 15px;
 	}
 
-	.adress-block-title {
-		font-size: 39px;
+	.plan-title {
+		font-size: 35px;
+		padding: 50px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.plan-block {
 		margin-bottom: 30px;
 	}
 
-	.adress-block__description {
+	.plan-block__title {
 		font-size: 20px;
+		@include font(bold);
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		text-align: center;
+	}
 
-		p {
-			margin-bottom: 25px;
-			font-size: 20px;
-			line-height: normal;
-			padding-bottom: 0;
+	.plan-block__img-container {
+		max-width: 100%;
+	}
 
-			&:last-child {
-				margin-bottom: 0;
+	.plan-block__img {
+		text-align: center;
+	}
+
+	.adress-sect {
+		background: #8fe1d0;
+		padding: 50px 0;
+
+		.adress-block {
+			position: relative;
+			padding: 0 0 0 95px;
+
+			&.adress-block_location:before {
+				@extend %pseudo;
+				@include get-sprite($contacts-spr, location);
+				left: 0;
 			}
+
+			&.adress-block_graf:before {
+				@extend %pseudo;
+				@include get-sprite($contacts-spr, graf);
+				left: 0;
+			}
+		}
+
+		.adress-block-title {
+			font-size: 39px;
+			margin-bottom: 30px;
+		}
+
+		.adress-block__description {
+			font-size: 20px;
+
+			p {
+				margin-bottom: 25px;
+				font-size: 20px;
+				line-height: normal;
+				padding-bottom: 0;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.adress-block__adress {
+			margin-bottom: 25px;
 		}
 	}
 
-	.adress-block__adress {
-		margin-bottom: 25px;
+	.location {
+		margin-bottom: 30px;
 	}
-}
 
-.location {
-	margin-bottom: 30px;
-}
+	.location__img-container {
+		max-width: 100%;
+	}
 
-.location__img-container {
-	max-width: 100%;
-}
-
-.location__img {
-	width: 100%;
+	.location__img {
+		width: 100%;
+	}
 }

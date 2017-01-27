@@ -1,63 +1,69 @@
 /* xs+sm+md */
 @media screen and (max-width: 1199px) {
-	.owl-carousel .owl-controls .owl-dots {
-		display: none !important;
+	.page-curtains {
+		.owl-carousel .owl-controls .owl-dots {
+			display: none !important;
+		}
 	}
 }
 
 /* xs+sm */
 @media screen and (max-width: 991px) {
-	.selection-list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
+	.page-curtains {
+		.selection-list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 }
 
 /* xs */
 @media screen and (max-width: 767px) {
-	.big-curtains-slider .big-curtains-slider__big_img .slick-list {
-		max-width: 100%; 
-	}
-
-	.big-curtains-slider .slick-prev,
-	.big-curtains-slider .slick-next {
-		display: none !important;
-	}
-
-	.big-curtains-slider__projectSlider.slick-initialized.slick-slider.slick-dotted .slick-list {
-		display: none !important;
-	}
-
-	.big-curtains-slider .slick-dots li button {
-		width: 18px;
-		height: 18px;
-		border-radius: 100%;
-		border: 3px solid white;
-		display: inline-block;
-		background-color: transparent;
-		border: 3px solid #92c8b5;
-
-		&:before {
-			display: none;
+	.page-curtains {
+		.big-curtains-slider .big-curtains-slider__big_img .slick-list {
+			max-width: 100%; 
 		}
-	}
 
-	.big-curtains-slider .slick-dots li.slick-active button {
-		background-color: #92c8b5;
-	}
+		.big-curtains-slider .slick-prev,
+		.big-curtains-slider .slick-next {
+			display: none !important;
+		}
 
-	.big-curtains-slider .big-curtains-slider__title {
-		padding: 30px 0 25px 0;
-	}
+		.big-curtains-slider__projectSlider.slick-initialized.slick-slider.slick-dotted .slick-list {
+			display: none !important;
+		}
 
-	.big-curtains-slider {
-		padding-bottom: 25px;
-	}
+		.big-curtains-slider .slick-dots li button {
+			width: 18px;
+			height: 18px;
+			border-radius: 100%;
+			border: 3px solid white;
+			display: inline-block;
+			background-color: transparent;
+			border: 3px solid #92c8b5;
 
-	.owl-carousel .owl-controls .owl-dots {
-		display: block !important;
+			&:before {
+				display: none;
+			}
+		}
+
+		.big-curtains-slider .slick-dots li.slick-active button {
+			background-color: #92c8b5;
+		}
+
+		.big-curtains-slider .big-curtains-slider__title {
+			padding: 30px 0 25px 0;
+		}
+
+		.big-curtains-slider {
+			padding-bottom: 25px;
+		}
+
+		.owl-carousel .owl-controls .owl-dots {
+			display: block !important;
+		}
 	}
 }
 

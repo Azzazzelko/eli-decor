@@ -1,85 +1,87 @@
-.projects {
-	margin-bottom: 50px;
-}
+.page-accessories {
+	.projects {
+		margin-bottom: 50px;
+	}
 
-.projects-list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
+	.projects-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
-.projects-title {
-	font-size: 35px;
-	padding: 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-}
+	.projects-title {
+		font-size: 35px;
+		padding: 50px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
 
-.project-img-container {
-	max-width: 100%;
-	overflow: hidden;
-	position: relative;
-}
+	.project-img-container {
+		max-width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
 
-.projects-description {
-	padding: 13px 15px 10px 15px;
-	background: #f9f8f3;
-	color: black;
-}
+	.projects-description {
+		padding: 13px 15px 10px 15px;
+		background: #f9f8f3;
+		color: black;
+	}
 
-.projects-description-text {
-	font-size: 16px;
-	line-height: 20px;
-	margin-bottom: 5px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
+	.projects-description-text {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 5px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 
-.projects-description-price {
-	font-size: 20px;
-}
+	.projects-description-price {
+		font-size: 20px;
+	}
 
-.projects-img {
-	transition: all 0.3s ease;
-}
-
-.projects-link {
-	display: block;
-}
-
-.projects-link:hover {
 	.projects-img {
-		transform: scale(1.2);
+		transition: all 0.3s ease;
 	}
 
-	.zoom {
-		opacity: 1;
-		left: 5px;
-		top: 5px;
-		bottom: 5px;
-		right: 5px;
+	.projects-link {
+		display: block;
 	}
-}
 
-.projects-item  {
-	margin-bottom: 30px;
-}
+	.projects-link:hover {
+		.projects-img {
+			transform: scale(1.2);
+		}
 
-.footer-nav .up {
-	right: 9%;
-}
+		.zoom {
+			opacity: 1;
+			left: 5px;
+			top: 5px;
+			bottom: 5px;
+			right: 5px;
+		}
+	}
 
-.btn-all-items {
-	display: inline-block;
-	margin-bottom: 10px;
-	vertical-align: middle;
-}
-
-.accessories-info {
-	font-size: 20px;
-
-	p {
+	.projects-item  {
 		margin-bottom: 30px;
+	}
+
+	.footer-nav .up {
+		right: 9%;
+	}
+
+	.btn-all-items {
+		display: inline-block;
+		margin-bottom: 10px;
+		vertical-align: middle;
+	}
+
+	.accessories-info {
+		font-size: 20px;
+
+		p {
+			margin-bottom: 30px;
+		}
 	}
 }

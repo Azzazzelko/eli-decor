@@ -2,7 +2,8 @@
 ;(function () {
   $(document).on('ready',function() {
 
-    $(".fancybox").fancybox();
+    if ( $(".fancybox").length )
+      $(".fancybox").fancybox();
 
     var projectsSlider = {
       loop:true,
