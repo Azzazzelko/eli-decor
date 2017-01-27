@@ -11,6 +11,17 @@
 	.designer-pop__container.container {
 		max-width: 100%;
 	}
+
+	.projectP-item {
+
+		&:nth-child(3n+2) {
+			height: 419px;
+		}
+
+		&:nth-child(3n) {
+			height: 419px;
+		}
+	}
 }
 
 /* xs+sm */
@@ -27,6 +38,17 @@
 
 	.designers-button {
 		line-height: 30px;
+	}
+
+	.projectP-item {
+
+		&:nth-child(3n+2) {
+			height: 320px;
+		}
+
+		&:nth-child(3n) {
+			height: 320px;
+		}
 	}
 }
 
@@ -86,6 +108,17 @@
 	.madeCurtains .btn_pink {
 		width: 100%;
 		font-size: 18px;
+	}
+
+	.projectP-item {
+
+		&:nth-child(3n+2) {
+			height: auto;
+		}
+
+		&:nth-child(3n) {
+			height: auto;
+		}
 	}
 }
 

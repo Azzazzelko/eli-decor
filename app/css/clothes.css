@@ -51,9 +51,8 @@
 
 .paggination-block {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   vertical-align: middle;
-  margin-right: 50px;
 }
 
 .paggination-title {
@@ -83,6 +82,13 @@
 .paggination-link.active, .paggination-link:hover {
   color: #66b7a1;
   text-decoration: underline;
+}
+
+.accessories-info {
+  font-size: 20px;
+}
+.accessories-info p {
+  margin-bottom: 30px;
 }
 
 .projects {

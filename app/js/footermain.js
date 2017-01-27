@@ -64,7 +64,7 @@ $(document).ready(function(){
         loop: true,
         margin: 30,
         nav: true,
-        dots: false,
+        dots: true,
         responsive:{
             0:{
                 items:1
@@ -79,11 +79,29 @@ $(document).ready(function(){
     };
     $('.owl-our-curt').owlCarousel(settings);
 
+    var partnersSettings = {
+        loop: true,
+        margin: 30,
+        nav: true,
+        items: 1
+    };
+    $('.owl-partners').owlCarousel(partnersSettings);
+
     $('.about-video .wrapp-video .poster').click(function(){
         $('.about-video .wrapp-video .poster').css({'display':'none'});
     });
 
     /* scroll-top */
+    $(document).on( 'scroll', function(){
+
+      if ($(window).scrollTop() > 200) {
+          $('.footer-nav .up').addClass('show');
+      } else {
+          $('.footer-nav .up').removeClass('show');
+      };
+
+    });
+
     $('.footer-nav .up').click(function(){                      
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });

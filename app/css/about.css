@@ -111,12 +111,12 @@
 }
 
 .owl-aboutSalonSlider .owl-controls .owl-nav .owl-prev {
-  left: -55px;
+  left: -305px;
   background: url('../images/prev.png?1481815287');
 }
 
 .owl-aboutSalonSlider .owl-controls .owl-nav .owl-next {
-  right: -55px;
+  right: -305px;
   background: url('../images/next.png?1481815288');
 }
 
@@ -174,5 +174,10 @@
   }
 }
 /* xs */
+@media screen and (max-width: 767px) {
+  .madeCurtains .owl-dots {
+    display: block !important;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

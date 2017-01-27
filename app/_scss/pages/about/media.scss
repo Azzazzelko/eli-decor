@@ -14,6 +14,10 @@
 
 /* xs */
 @media screen and (max-width: 767px) {
-
+	.madeCurtains {
+		.owl-dots {
+			display: block !important;
+		}
+	}
 }
 

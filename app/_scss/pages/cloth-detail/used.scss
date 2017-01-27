@@ -48,7 +48,7 @@
 	min-width: 85%;
 	padding: 15px 10px 15px 10px;
 	background: #ffffff;
-	opacity: 0.9;
+	opacity: 0;
 	text-align: center;
 }
 
@@ -70,6 +70,7 @@
 	}
 
 	.selection-item__img-description {
+		opacity: 0.9;
 		transform: translate(-50%, -50%) scale(1.05);
 	}
 }

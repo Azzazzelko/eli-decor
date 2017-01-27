@@ -2,6 +2,8 @@
 ;(function () {
   $(document).on('ready',function() {
 
+    $(".fancybox").fancybox();
+
     var projectsSlider = {
       loop:true,
       nav:true,
@@ -115,11 +117,11 @@
 
     /* header and footer */
     $('.navigation li').hover(function () {
-      if($(this).next().hasClass('submenu-block')) {
-        $(this).next().addClass('active');
+      if($(this).find('.submenu-block').hasClass('submenu-block')) {
+        $(this).find('.submenu-block').addClass('active');
       }
     }, function () {
-      $(this).next().removeClass('active');
+      $(this).find('.submenu-block').removeClass('active');
     });
 
     $('.submenu-block').hover(function () {
@@ -132,11 +134,11 @@
       $('.m-menu-wrapper').slideToggle();
     })
 
-    $('.m-menu-list li').click(function() {
-      if($(this).next().hasClass('active')) {
-        $(this).next().removeClass('active').slideUp();
+    $('.m-menu-list li a').click(function() {
+      if($(this).parent().find('.m-submenu-block').hasClass('active')) {
+        $(this).parent().find('.m-submenu-block').removeClass('active').slideUp();
       } else {
-        $(this).next().addClass('active').slideDown();
+        $(this).parent().find('.m-submenu-block').addClass('active').slideDown();
       }
     });
 

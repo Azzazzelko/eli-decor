@@ -288,7 +288,7 @@
   min-width: 85%;
   padding: 15px 10px 15px 10px;
   background: #ffffff;
-  opacity: 0.9;
+  opacity: 0;
   text-align: center;
 }
 
@@ -308,6 +308,7 @@
   transform: scale(1.2);
 }
 .selection-item__img-container:hover .selection-item__img-description {
+  opacity: 0.9;
   transform: translate(-50%, -50%) scale(1.05);
 }
 
@@ -423,6 +424,7 @@
 }
 .our-designers .owl-our-designers {
   margin-bottom: 35px;
+  padding-bottom: 30px;
 }
 .our-designers .our-designers__title {
   padding: 50px 0;
@@ -490,6 +492,10 @@
 
   .big-curtains-slider {
     padding-bottom: 25px;
+  }
+
+  .owl-carousel .owl-controls .owl-dots {
+    display: block !important;
   }
 }
 

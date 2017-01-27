@@ -47,6 +47,12 @@
   border-bottom: 1px solid black;
 }
 
+.paggination-block {
+  display: inline-block;
+  margin-bottom: 50px;
+  vertical-align: middle;
+}
+
 .paggination-title {
   display: inline-block;
   font-size: 20px;
@@ -74,6 +80,13 @@
 .paggination-link.active, .paggination-link:hover {
   color: #66b7a1;
   text-decoration: underline;
+}
+
+.accessories-info {
+  font-size: 20px;
+}
+.accessories-info p {
+  margin-bottom: 30px;
 }
 
 .projects {
