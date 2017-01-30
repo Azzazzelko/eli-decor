@@ -261,7 +261,7 @@
 		</div>
 	</header>
 
-	<main class="main page-ready-made">
+	<main class="main">
 		
 		<section class="breadcrumbs-block">
 			<div class="container_small padd-clear">
@@ -276,451 +276,453 @@
 			</div>
 		</section>
 
-		<section class="projects">
-			<div class="container">
-				<div class="projects-title">Готовые шторы</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-4">
-						<aside class="sidebar">
-							<a href="#sidebar" data-toggle="collapse" class="btn_pink visible-xs">Фильтры</a>
-							<div class="collapse in" id="sidebar">
-								<ul class="sidebar-list">
-									<li class="sidebar-item">
-										<a href="#sidebar-slider-container" class="sidebar-title" data-toggle="collapse">Цена</a>
-										<div class="collapse in sidebar-slider_fix" id="sidebar-slider-container">
-											<div class="sidebar-slider-container">
-												<div class="sidebar-slider" id="slider" data-min="0" data-max="10000"></div>
-												<div id="slider-amount" class="sidebar-slider-amount"></div>
-											</div>
+		<div class="page-ready-made">
+			<section class="projects">
+				<div class="container">
+					<div class="projects-title">Готовые шторы</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<aside class="sidebar">
+								<a href="#sidebar" data-toggle="collapse" class="btn_pink visible-xs">Фильтры</a>
+								<div class="collapse in" id="sidebar">
+									<ul class="sidebar-list">
+										<li class="sidebar-item">
+											<a href="#sidebar-slider-container" class="sidebar-title" data-toggle="collapse">Цена</a>
+											<div class="collapse in sidebar-slider_fix" id="sidebar-slider-container">
+												<div class="sidebar-slider-container">
+													<div class="sidebar-slider" id="slider" data-min="0" data-max="10000"></div>
+													<div id="slider-amount" class="sidebar-slider-amount"></div>
+												</div>
 
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<a href="#sidebar-blinds-list" class="sidebar-title" data-toggle="collapse">Вид штор</a>
+											<div class="collapse in" id="sidebar-blinds-list">
+												<ul class="sidebar-blinds-list">
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Римские</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Австрийские</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Французские</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Классические</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Плиссе</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Японские</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Итальянские</div>
+														</label>
+													</li>
+													<li class="sidebar-blinds-item">
+														<label class="sidebar-blinds-label">
+															<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
+															<div class="sidebar-blinds-text">Английские</div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<a href="#sidebar-room-list" class="sidebar-title" data-toggle="collapse">Помещение</a>
+											<div class="collapse in" id="sidebar-room-list">
+												<ul class="sidebar-room-list">
+													<li class="sidebar-room-item">
+														<label class="sidebar-room-label">
+															<input type="checkbox" name="room" class="sidebar-room-checkbox">
+															<div class="sidebar-room-text">Зал</div>
+														</label>
+													</li>
+													<li class="sidebar-room-item">
+														<label class="sidebar-room-label">
+															<input type="checkbox" name="room" class="sidebar-room-checkbox">
+															<div class="sidebar-room-text">Гостинная</div>
+														</label>
+													</li>
+													<li class="sidebar-room-item">
+														<label class="sidebar-room-label">
+															<input type="checkbox" name="room" class="sidebar-room-checkbox">
+															<div class="sidebar-room-text">Спальня</div>
+														</label>
+													</li>
+													<li class="sidebar-room-item">
+														<label class="sidebar-room-label">
+															<input type="checkbox" name="room" class="sidebar-room-checkbox">
+															<div class="sidebar-room-text">Прихожая</div>
+														</label>
+													</li>
+													<li class="sidebar-room-item">
+														<label class="sidebar-room-label">
+															<input type="checkbox" name="room" class="sidebar-room-checkbox">
+															<div class="sidebar-room-text">Ванна</div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<a href="#sidebar-style-list" class="sidebar-title" data-toggle="collapse">Стиль</a>
+											<div class="collapse in" id="sidebar-style-list">
+												<ul class="sidebar-style-list">
+													<li class="sidebar-style-item">
+														<label class="sidebar-style-label">
+															<input type="checkbox" name="style" class="sidebar-style-checkbox">
+															<div class="sidebar-style-text">Кантри</div>
+														</label>
+													</li>
+													<li class="sidebar-style-item">
+														<label class="sidebar-style-label">
+															<input type="checkbox" name="style" class="sidebar-style-checkbox">
+															<div class="sidebar-style-text">Ампир</div>
+														</label>
+													</li>
+													<li class="sidebar-style-item">
+														<label class="sidebar-style-label">
+															<input type="checkbox" name="style" class="sidebar-style-checkbox">
+															<div class="sidebar-style-text">Минимализм</div>
+														</label>
+													</li>
+													<li class="sidebar-style-item">
+														<label class="sidebar-style-label">
+															<input type="checkbox" name="style" class="sidebar-style-checkbox">
+															<div class="sidebar-style-text">Модерн</div>
+														</label>
+													</li>
+												</ul>	
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<a href="#sidebar-colors-list" class="sidebar-title" data-toggle="collapse">Цвета</a>
+											<div class="collapse in" id="sidebar-colors-list">
+												<ul class="sidebar-colors-list">
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox" checked="">
+															<div class="sidebar-colors-text green"></div>
+														</label>
+													</li>
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
+															<div class="sidebar-colors-text red"></div>
+														</label>
+													</li>
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
+															<div class="sidebar-colors-text yellow"></div>
+														</label>
+													</li>
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
+															<div class="sidebar-colors-text blue"></div>
+														</label>
+													</li>
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
+															<div class="sidebar-colors-text gray"></div>
+														</label>
+													</li>
+													<li class="sidebar-colors-item">
+														<label class="sidebar-colors-label">
+															<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
+															<div class="sidebar-colors-text black"></div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a href="#" class="btn_pink sidebar-reset-filter">Сбросить фильтр</a>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<ul class="projects-list row">
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
 										</div>
-									</li>
-									<li class="sidebar-item">
-										<a href="#sidebar-blinds-list" class="sidebar-title" data-toggle="collapse">Вид штор</a>
-										<div class="collapse in" id="sidebar-blinds-list">
-											<ul class="sidebar-blinds-list">
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Римские</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Австрийские</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Французские</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Классические</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Плиссе</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Японские</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Итальянские</div>
-													</label>
-												</li>
-												<li class="sidebar-blinds-item">
-													<label class="sidebar-blinds-label">
-														<input type="checkbox" name="blinds" class="sidebar-blinds-checkbox">
-														<div class="sidebar-blinds-text">Английские</div>
-													</label>
-												</li>
-											</ul>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
 										</div>
-									</li>
-									<li class="sidebar-item">
-										<a href="#sidebar-room-list" class="sidebar-title" data-toggle="collapse">Помещение</a>
-										<div class="collapse in" id="sidebar-room-list">
-											<ul class="sidebar-room-list">
-												<li class="sidebar-room-item">
-													<label class="sidebar-room-label">
-														<input type="checkbox" name="room" class="sidebar-room-checkbox">
-														<div class="sidebar-room-text">Зал</div>
-													</label>
-												</li>
-												<li class="sidebar-room-item">
-													<label class="sidebar-room-label">
-														<input type="checkbox" name="room" class="sidebar-room-checkbox">
-														<div class="sidebar-room-text">Гостинная</div>
-													</label>
-												</li>
-												<li class="sidebar-room-item">
-													<label class="sidebar-room-label">
-														<input type="checkbox" name="room" class="sidebar-room-checkbox">
-														<div class="sidebar-room-text">Спальня</div>
-													</label>
-												</li>
-												<li class="sidebar-room-item">
-													<label class="sidebar-room-label">
-														<input type="checkbox" name="room" class="sidebar-room-checkbox">
-														<div class="sidebar-room-text">Прихожая</div>
-													</label>
-												</li>
-												<li class="sidebar-room-item">
-													<label class="sidebar-room-label">
-														<input type="checkbox" name="room" class="sidebar-room-checkbox">
-														<div class="sidebar-room-text">Ванна</div>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li class="sidebar-item">
-										<a href="#sidebar-style-list" class="sidebar-title" data-toggle="collapse">Стиль</a>
-										<div class="collapse in" id="sidebar-style-list">
-											<ul class="sidebar-style-list">
-												<li class="sidebar-style-item">
-													<label class="sidebar-style-label">
-														<input type="checkbox" name="style" class="sidebar-style-checkbox">
-														<div class="sidebar-style-text">Кантри</div>
-													</label>
-												</li>
-												<li class="sidebar-style-item">
-													<label class="sidebar-style-label">
-														<input type="checkbox" name="style" class="sidebar-style-checkbox">
-														<div class="sidebar-style-text">Ампир</div>
-													</label>
-												</li>
-												<li class="sidebar-style-item">
-													<label class="sidebar-style-label">
-														<input type="checkbox" name="style" class="sidebar-style-checkbox">
-														<div class="sidebar-style-text">Минимализм</div>
-													</label>
-												</li>
-												<li class="sidebar-style-item">
-													<label class="sidebar-style-label">
-														<input type="checkbox" name="style" class="sidebar-style-checkbox">
-														<div class="sidebar-style-text">Модерн</div>
-													</label>
-												</li>
-											</ul>	
-										</div>
-									</li>
-									<li class="sidebar-item">
-										<a href="#sidebar-colors-list" class="sidebar-title" data-toggle="collapse">Цвета</a>
-										<div class="collapse in" id="sidebar-colors-list">
-											<ul class="sidebar-colors-list">
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox" checked="">
-														<div class="sidebar-colors-text green"></div>
-													</label>
-												</li>
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
-														<div class="sidebar-colors-text red"></div>
-													</label>
-												</li>
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
-														<div class="sidebar-colors-text yellow"></div>
-													</label>
-												</li>
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
-														<div class="sidebar-colors-text blue"></div>
-													</label>
-												</li>
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
-														<div class="sidebar-colors-text gray"></div>
-													</label>
-												</li>
-												<li class="sidebar-colors-item">
-													<label class="sidebar-colors-label">
-														<input type="checkbox" name="colors" class="sidebar-colors-checkbox">
-														<div class="sidebar-colors-text black"></div>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-								<a href="#" class="btn_pink sidebar-reset-filter">Сбросить фильтр</a>
-							</div>
-						</aside>
-					</div>
-					<div class="col-md-9 col-sm-8">
-						<ul class="projects-list row">
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-							<li class="projects-item col-md-4 col-sm-6">
-								<a href="#" class="projects-link">
-									<div class="project-img-container">
-										<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
-									</div>
-									<div class="projects-description clearfix">
-										<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
-										<div class="projects-description-price pull-left">17 500 ₽</div>
-										<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
-									</div>
-								</a>
-							</li>
-						</ul>
-						<div class="paggination-block">
-							<div class="paggination-title">Страницы:</div>
-							<ul class="paggination-list">
-								<li class="paggination-item">
-									<a href="#" class="paggination-link active">1</a>
+									</a>
 								</li>
-								<li class="paggination-item">
-									<a href="#" class="paggination-link">2</a>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
 								</li>
-								<li class="paggination-item">
-									<a href="#" class="paggination-link">3</a>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
 								</li>
-								<li class="paggination-item">
-									<a href="#" class="paggination-link">4</a>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
 								</li>
-								<li class="paggination-item">
-									<a href="#" class="paggination-link">5</a>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
+								</li>
+								<li class="projects-item col-md-4 col-sm-6">
+									<a href="#" class="projects-link">
+										<div class="project-img-container">
+											<img src="../images/project-item-1.png" alt="img" class="projects-img img-responsive"/>
+										</div>
+										<div class="projects-description clearfix">
+											<div class="projects-description-text">Римские шторы в ресторане отеля Hilton Double Tree</div>
+											<div class="projects-description-price pull-left">17 500 ₽</div>
+											<a href="#" class="btn_pink projects-description-btn pull-right">Подробнее</a>
+										</div>
+									</a>
 								</li>
 							</ul>
-						</div>	
-						<div class="accessories-info">
-							<p>
-								Профессионализм наших мастеров, широкий выбор материалов и ответственный подход помогут вам в создании уникального интерьера, центральное место в котором отведено окнам, декорированным неповторимыми в своем изяществе шторами! Сегодня актуальны самые разнообразные решения дизайнера: однотонные и с различными рисунками и узорами; лаконичные и с богатой фактурой; в разной цветовой гамме.
-							</p>
-							<p>
-								Помимо этого, наша студия пошива штор предлагает возможность купить готовые дизайнерские комплекты занавесей по сниженной цене в период обновления экспозиций!
-							</p>
+							<div class="paggination-block">
+								<div class="paggination-title">Страницы:</div>
+								<ul class="paggination-list">
+									<li class="paggination-item">
+										<a href="#" class="paggination-link active">1</a>
+									</li>
+									<li class="paggination-item">
+										<a href="#" class="paggination-link">2</a>
+									</li>
+									<li class="paggination-item">
+										<a href="#" class="paggination-link">3</a>
+									</li>
+									<li class="paggination-item">
+										<a href="#" class="paggination-link">4</a>
+									</li>
+									<li class="paggination-item">
+										<a href="#" class="paggination-link">5</a>
+									</li>
+								</ul>
+							</div>	
+							<div class="accessories-info">
+								<p>
+									Профессионализм наших мастеров, широкий выбор материалов и ответственный подход помогут вам в создании уникального интерьера, центральное место в котором отведено окнам, декорированным неповторимыми в своем изяществе шторами! Сегодня актуальны самые разнообразные решения дизайнера: однотонные и с различными рисунками и узорами; лаконичные и с богатой фактурой; в разной цветовой гамме.
+								</p>
+								<p>
+									Помимо этого, наша студия пошива штор предлагает возможность купить готовые дизайнерские комплекты занавесей по сниженной цене в период обновления экспозиций!
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<!-- Zoom img modal -->
+			<div class="modal zoom-pop-up inner-modal">
+				<div class="zoom-pop-up__dialog">
+					<div class="zoom-pop-up__container">
+						<a href="#" class="thanks-pop-up__close-button" data-my-pop-close="true"></a>
+						<div class="big_img">
+							<div>
+								<img src="../images/made_curtains1.png" alt="img">
+							</div>
+							<div>
+								<img src="../images/made_curtains2.png" alt="img">
+							</div>
+							<div>
+								<img src="../images/made_curtains3.png" alt="img">
+							</div>
+							<div>
+								<img src="../images/made_curtains1.png" alt="img">
+							</div>
+							<div>
+								<img src="../images/made_curtains2.png" alt="img">
+							</div>
+							<div>
+								<img src="../images/made_curtains3.png" alt="img">
+							</div>
+						</div>
+						<div class="projectSlider">
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains1.png" alt="img">
+								</div>
+							</div>
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains2.png" alt="img">
+								</div>
+							</div>
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains3.png" alt="img">
+								</div>
+							</div>
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains1.png" alt="img">
+								</div>
+							</div>
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains2.png" alt="img">
+								</div>
+							</div>
+							<div>
+								<div class="item project-gallery">
+									<img src="../images/made_curtains3.png" alt="img">
+								</div>
+							</div>
+						</div>
+						<div class="gallery-buttons">
+							<a href="#" class="btn_pink calculatePrice_popup_open">Консультация дизайнера</a>
+							<a href="#" class="btn_green">Подробнее о проекте</a>
+						</div>
+					</div>
+				</div>	
 			</div>
-		</section>
 
-		<!-- Zoom img modal -->
-		<div class="modal zoom-pop-up inner-modal">
-			<div class="zoom-pop-up__dialog">
-				<div class="zoom-pop-up__container">
-					<a href="#" class="thanks-pop-up__close-button" data-my-pop-close="true"></a>
-					<div class="big_img">
-						<div>
-							<img src="../images/made_curtains1.png" alt="img">
-						</div>
-						<div>
-							<img src="../images/made_curtains2.png" alt="img">
-						</div>
-						<div>
-							<img src="../images/made_curtains3.png" alt="img">
-						</div>
-						<div>
-							<img src="../images/made_curtains1.png" alt="img">
-						</div>
-						<div>
-							<img src="../images/made_curtains2.png" alt="img">
-						</div>
-						<div>
-							<img src="../images/made_curtains3.png" alt="img">
-						</div>
-					</div>
-					<div class="projectSlider">
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains1.png" alt="img">
-							</div>
-						</div>
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains2.png" alt="img">
-							</div>
-						</div>
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains3.png" alt="img">
-							</div>
-						</div>
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains1.png" alt="img">
-							</div>
-						</div>
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains2.png" alt="img">
-							</div>
-						</div>
-						<div>
-							<div class="item project-gallery">
-								<img src="../images/made_curtains3.png" alt="img">
-							</div>
-						</div>
-					</div>
-					<div class="gallery-buttons">
-						<a href="#" class="btn_pink calculatePrice_popup_open">Консультация дизайнера</a>
-						<a href="#" class="btn_green">Подробнее о проекте</a>
-					</div>
-				</div>
-			</div>	
-		</div>
-
-		<!-- Feedback modal -->
-		<div class="popup" id="calculatePrice_popup">
-			<div class="exit calculatePrice_popup_close"></div>
-			<img src="../images/logo.png" alt="img">
-			<form action="">
-				<input type="text" name="name" placeholder="Введите имя" />
-				<input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" />
-				<input type="text" name="mail" placeholder="E-mail" />
-				<input type="submit" value="Отправить" class="btn_pink" />
-			</form>
+			<!-- Feedback modal -->
+			<div class="popup" id="calculatePrice_popup">
+				<div class="exit calculatePrice_popup_close"></div>
+				<img src="../images/logo.png" alt="img">
+				<form action="">
+					<input type="text" name="name" placeholder="Введите имя" />
+					<input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" />
+					<input type="text" name="mail" placeholder="E-mail" />
+					<input type="submit" value="Отправить" class="btn_pink" />
+				</form>
+			</div>
 		</div>
 	</main>
 
